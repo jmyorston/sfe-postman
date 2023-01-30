@@ -1,0 +1,691 @@
+{
+	"info": {
+		"_postman_id": "dc645638-25e5-4665-88a0-cac9b4cbab91",
+		"name": "Sync For Expenses Beta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sync For Expenses Beta",
+			"item": [
+				{
+					"name": "Company Auth",
+					"item": [
+						{
+							"name": "Create Company",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var resp = JSON.parse(responseBody)\r",
+											"\r",
+											"// stores the accounting connection as a collection variable\r",
+											"pm.collectionVariables.set(\"accountingConnectionId\", resp.dataConnections[0].id)\r",
+											"pm.collectionVariables.set(\"companyId\", resp.id)\r",
+											""
+										],
+										"type": "text/javascript",
+										"id": "b01e08b5-f002-47db-9e5c-383ea5a28789"
+									}
+								}
+							],
+							"_postman_id": "87996bfc-31ea-4f2c-9df4-8051aaf278af",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"{{$randomCompanyName}}\",\r\n  \"platformType\": \"qhyg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}companies"
+							},
+							"response": []
+						},
+						{
+							"name": "Create partnerExpense Connection",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var resp = JSON.parse(responseBody)\r",
+											"\r",
+											"// stores the accounting connection as a collection variable\r",
+											"pm.collectionVariables.set(\"expenseConnectionId\", resp.id)"
+										],
+										"type": "text/javascript",
+										"id": "ae1f64d9-6e61-499b-b0fb-36a35e0873b4"
+									}
+								}
+							],
+							"_postman_id": "0c451e64-5ed5-4b87-8541-d1c593363ed8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/connections/partnerexpense",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"connections",
+										"partnerexpense"
+									],
+									"variable": [
+										{
+											"id": "676bb613-090f-4b38-897b-38ce3102b964",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Connections",
+							"_postman_id": "9f87d73b-bd8c-44f4-8317-41823cfa6e43",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}companies/:companyId",
+									"host": [
+										"{{baseUrl}}companies"
+									],
+									"path": [
+										":companyId"
+									],
+									"variable": [
+										{
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "aedd3da2-5454-4b08-b4c7-cf01b61f587f",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Config & Mapping",
+					"item": [
+						{
+							"name": "Get Configuration",
+							"_postman_id": "4715022b-aa2e-4d5f-a3a7-10fffc52c557",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/config",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"config"
+									],
+									"variable": [
+										{
+											"id": "17a833ad-f53d-4a24-96fa-aa717dc64f60",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Save Configuration",
+							"_postman_id": "da6a2dcc-9b30-44d2-8da8-23c8369db41d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"companyId\": \"{{companyId}}\",\r\n    \"accountingSoftwareCompanyName\": null,\r\n    \"enabled\": false,\r\n    \"configured\": true,\r\n    \"schedule\": {\r\n        \"selectedFrequency\": \"Daily\",\r\n        \"frequencyOptions\": [\r\n            \"Daily\"\r\n        ],\r\n        \"startDate\": \"0001-01-01T00:00:00\",\r\n        \"syncHourUtc\": 0,\r\n        \"timeZoneIanaId\": null\r\n    },\r\n    \"configuration\": {\r\n        \"syncAsBankFeeds\": {\r\n            \"enableSync\": false,\r\n            \"selectedBankAccountId\": null,\r\n            \"bankAccountOptions\": []\r\n        },\r\n        \"syncAsExpenses\": {\r\n            \"enableSync\": true,\r\n            \"supplier\": {\r\n                \"selectedSupplierId\": \"124\",\r\n                \"supplierOptions\": []\r\n            },\r\n            \"customer\": {\r\n                \"selectedCustomerId\": \"140\",\r\n                \"customerOptions\": []\r\n            },\r\n            \"selectedBankAccountId\": \"89\",\r\n            \"bankAccountOptions\": []\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/config",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"config"
+									],
+									"variable": [
+										{
+											"id": "1f5a6454-864e-4d86-9dac-550788c40420",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get expense mapping options",
+							"_postman_id": "3c428e17-ab34-4bdf-a0c1-ee4f6f064166",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/mappingoptions",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"mappingoptions"
+									],
+									"variable": [
+										{
+											"id": "52e3d519-7b4a-4508-8a7f-21e14d10907d",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "d02ccc2d-400f-4462-a24f-a21d756c25e4",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Datasets",
+					"item": [
+						{
+							"name": "Create Expense Dataset",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "db0e5006-e7a3-45d9-a51d-86ed77c2a5c6",
+										"exec": [
+											"var resp = JSON.parse(responseBody)\r",
+											"\r",
+											"pm.collectionVariables.set(\"datasetId\", resp.datasetId)"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "541f8149-ae2b-4650-b158-256e308ab8ab",
+										"exec": [
+											"let uuid = require('uuid');\r",
+											"pm.collectionVariables.set(\"transactionId1\", uuid.v4());\r",
+											"pm.collectionVariables.set(\"transactionId2\", uuid.v4());"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"_postman_id": "bd019ef9-9e7f-4a8f-a5b2-6564b273a8b0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n   \"items\": [\r\n     {\r\n       \"id\": \"{{transactionId1}}\",\r\n       \"type\": \"Payment\",\r\n       \"issueDate\": \"2023-01-02\",\r\n       \"dateApproved\": \"2023-01-02\",\r\n       \"currency\": \"GBP\",\r\n       \"lines\": [\r\n         {\r\n           \"netAmount\": -23.75,\r\n           \"taxAmount\": -4.75,\r\n           \"taxRateRef\": { \"id\": \"23_Bills\" },\r\n           \"accountRef\": { \"id\": \"88\" },\r\n           \"trackingRefs\": [\r\n             //{ \"id\": \"2f2498b9-f8cc-4985-b6ee-58ca2b32e3e6\" }\r\n           ]\r\n         }\r\n       ]\r\n     }\r\n   ]\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/data/expense-transactions",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"data",
+										"expense-transactions"
+									],
+									"variable": [
+										{
+											"id": "fc465499-52b9-4053-b150-377c187a062c",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "6547dabf-f95f-4de0-adbf-e2ac60728a13",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Syncing Expenses",
+					"item": [
+						{
+							"name": "Initiate Sync",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var resp = JSON.parse(responseBody)\r",
+											"\r",
+											"pm.collectionVariables.set(\"syncId\", resp.syncId)"
+										],
+										"type": "text/javascript",
+										"id": "c06ff967-f900-4eb4-ba55-86725a60be6b"
+									}
+								}
+							],
+							"_postman_id": "e080e0e8-f34f-413a-be4f-504e7172fc5f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"datasetIds\": [\r\n     \"{{datasetId}}\"\r\n   ]\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/syncs",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"syncs"
+									],
+									"variable": [
+										{
+											"id": "64ef30c7-cbf8-49cd-9625-2c295265064f",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Sync Status",
+							"_postman_id": "f86ff14b-9916-45ed-b265-fa919638d60f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/syncs/:syncId/status",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"syncs",
+										":syncId",
+										"status"
+									],
+									"variable": [
+										{
+											"id": "8a402e21-6ab5-4652-a53d-31bae6864415",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										},
+										{
+											"id": "9ef1a5f8-049b-4655-bbac-ae9ca5d3d523",
+											"key": "syncId",
+											"value": "{{syncId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Sync Statuses",
+							"_postman_id": "9c72f384-ead0-4f86-8ab8-602902888cef",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/syncs/list/status",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"syncs",
+										"list",
+										"status"
+									],
+									"variable": [
+										{
+											"id": "07fb7ffb-850b-44c2-b2e0-dc3f9b351a97",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Transaction Status",
+							"_postman_id": "0ecc8107-a890-450f-b8a0-a6c48015c309",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/syncs/:syncId/transactions",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"syncs",
+										":syncId",
+										"transactions"
+									],
+									"variable": [
+										{
+											"id": "8cb09263-c334-454c-8d0e-9bc45ced4183",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"type": "string"
+										},
+										{
+											"id": "36546bad-73f4-41bd-9ff8-184bc53f96f7",
+											"key": "syncId",
+											"value": "{{syncId}}",
+											"type": "string"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "9783943e-5d17-45ae-b992-b9f1c2cb2476",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Upload Receipt",
+					"_postman_id": "6d13e7b2-77d3-4763-9699-4dd43f3d6cf3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "multi-part",
+									"type": "file",
+									"src": "/C:/Users/JamesYorston/Downloads/cot_daily_syncs (1).png"
+								}
+							],
+							"options": {}
+						},
+						"url": {
+							"raw": "{{expenseUrl}}companies/:companyId/syncs/:syncId/transactions/:transactionId/attachments",
+							"host": [
+								"{{expenseUrl}}companies"
+							],
+							"path": [
+								":companyId",
+								"syncs",
+								":syncId",
+								"transactions",
+								":transactionId",
+								"attachments"
+							],
+							"variable": [
+								{
+									"key": "companyId",
+									"value": "{{companyId}}",
+									"type": "string"
+								},
+								{
+									"key": "syncId",
+									"value": "{{syncId}}",
+									"type": "string"
+								},
+								{
+									"key": "transactionId",
+									"value": "{{transactionId1}}",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "95fbcff6-4680-40b9-b003-1e721ddeedcf",
+			"auth": {
+				"type": "apikey",
+				"apikey": {
+					"value": "{{codat_api_key_base_64}}",
+					"key": "Authorization"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						],
+						"id": "24988e62-caeb-4463-90c4-0f8db12c3804"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						],
+						"id": "70734a3f-713e-4437-b07a-c782ee135f85"
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "f6cd42b3-a0d5-4993-aee4-a853136007e1"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "c98b4282-9b97-42cf-97ce-cfa562b4363d"
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "9e82a7b7-f67d-4016-ba41-967caff4e586",
+			"key": "companyId",
+			"value": "00000000-0000-0000-0000-000000000000",
+			"type": "string"
+		},
+		{
+			"id": "67978e2a-85f5-4e0c-a885-48fceafe6b66",
+			"key": "orderId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "224f80be-0f14-4ab5-b790-a6b89ab7ff6b",
+			"key": "accountingConnectionId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "b7eba809-a960-4db6-9c5b-3c48083bd85c",
+			"key": "codat_api_key_base_64",
+			"value": "Basic T2lMamRidGRwb0ROR2M3ZE1RZ2lhYWFRNElKbW1Gb045b2VaSFNWNg==",
+			"type": "string"
+		},
+		{
+			"id": "34cf88df-4375-45ff-8f81-ea6c679fbaeb",
+			"key": "commerceKey",
+			"value": "lqai",
+			"type": "string"
+		},
+		{
+			"id": "ae48cfd2-9c9a-4809-a87d-84ce7a3651d1",
+			"key": "accountingKey",
+			"value": "gbol",
+			"type": "string"
+		},
+		{
+			"id": "15e48892-bcbf-4039-94e2-da5bdb8aaaee",
+			"key": "merchantName",
+			"value": "SME Name or ID",
+			"type": "string"
+		},
+		{
+			"id": "f08435ba-3bd1-4e7c-abb3-a527cd21153d",
+			"key": "platformKey",
+			"value": "mqjo",
+			"type": "string"
+		},
+		{
+			"id": "008f2ac7-b6bc-482c-96a1-4e45be6e8498",
+			"key": "connectionId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "f65e79ce-9f69-4721-bd8d-e82f4bca83e1",
+			"key": "expenseUrl",
+			"value": "https://expensesync-integration.codat.io/",
+			"type": "string"
+		},
+		{
+			"id": "d63dee76-a54a-41ff-9f6a-15c05c0335c5",
+			"key": "baseUrl",
+			"value": "https://api-integration.codat.io/",
+			"type": "string"
+		},
+		{
+			"id": "c1ce6e18-d753-4582-92e0-75bd6175a4b0",
+			"key": "expenseConnectionId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "4d5cc5c1-9c57-4120-b8f3-2e7bbc9e9df0",
+			"key": "datasetId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "53b85c28-fb77-4293-9fc1-533fe4857a67",
+			"key": "syncId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "29d1649d-58e9-415b-b9d2-4eefe6c0dbf9",
+			"key": "transactionId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "2d56672a-1b2c-401d-b6c5-583d11640803",
+			"key": "transactionId1",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "a3ba0a28-35aa-45d2-bff1-0974d724be4f",
+			"key": "transactionId2",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
