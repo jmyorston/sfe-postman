@@ -320,7 +320,7 @@
 										}
 									]
 								},
-								"description": "In Codat a Supplier is a person or an organization that buys goods or services from a company, sync for expenses uses these to track all income related activity against. You can either add the `id` of an existing customer from the accounting software or you can create a new customer and use the `id` returned from the `pushOperationsEndpoint`."
+								"description": "In Codat a Supplier is a person or organization that provides a product or service, sync for expenses uses these to track all purchase and refund related activity against.  \nYou can either add the `id` of an existing customer from the accounting software or you can create a new customer and use the `id` returned from the `pushOperationsEndpoint`."
 							},
 							"response": []
 						},
@@ -733,90 +733,90 @@
 	],
 	"variable": [
 		{
-			"id": "b0c1cc5b-adb3-4c1f-af5a-2a0ea5948e82",
+			"id": "c1787013-246a-4830-9720-e9cab55e8e5e",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "f577ef65-f551-40bb-add0-1488eafb71fe",
+			"id": "371fa2ee-1d50-4d87-8715-cfdcbef1be9e",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "8a5b5c94-d8a9-4979-8dab-a36c25b724e7",
+			"id": "e317cc68-aeab-4a9f-897a-0de5467386aa",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "4a0dbbd3-21e7-4a3a-b276-8d30b0d61d11",
+			"id": "641a4701-e51e-4b1c-ac99-95392241a3e3",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "af18793c-ff72-44a8-8672-5d8a5b8c2db8",
+			"id": "c2a549cf-03f5-4aad-a9dd-c14e8bc22fbe",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "dd535f82-7213-4add-af33-c43527e6def1",
+			"id": "519087aa-dacd-45fd-959f-a4f2a4224ef3",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "5cc3439a-2b74-481c-aab4-4a6816d439aa",
+			"id": "fdca93cd-4fe2-4210-b7ff-623d7468e8bc",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "02c668c6-28f6-4151-bd3c-260abeaf00df",
+			"id": "ca3f386e-90c1-4cb1-893b-9fbfaa45a15e",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1c0d98f6-dae7-4e03-bd9f-8d2dbe84b6ef",
+			"id": "64cf5e9e-c069-4f27-82ec-48a152159c5e",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "9defbc2f-2197-4fc9-bbf9-1fc3af865182",
+			"id": "30c60d21-dd04-44c1-b150-06e4c4f65a21",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "69e37862-c4e6-4073-8931-969fb909af43",
+			"id": "b6888d10-be8f-46a0-99ad-42520b0f04c7",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "c3ada3f3-8af5-4d7e-9484-3e70656f34b8",
+			"id": "96a28f64-d97a-4d92-aae6-4f2db69648f2",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e082cbe-4536-47b1-9b53-9ff19a320aff",
+			"id": "4bcdf987-3daa-4006-a121-b2b50e04d6e7",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "912153a9-2889-4190-b6aa-fcf0d3218e09",
+			"id": "9f0e4849-248f-4261-af16-13cd3d82e18c",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "b1be149f-bf68-49ac-8b02-62b9e0b1e3f3",
+			"id": "e682ab0e-a426-4645-90ad-ebaf955aaf7a",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "88b55431-3628-48df-9f41-a9c2d8f0f61c",
+			"id": "5a76e863-6d66-4660-a683-44605ed11a7a",
 			"key": "transactionId2",
 			"value": ""
 		}
