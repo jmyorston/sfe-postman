@@ -124,7 +124,8 @@
 							"response": []
 						}
 					],
-					"id": "aedd3da2-5454-4b08-b4c7-cf01b61f587f"
+					"id": "aedd3da2-5454-4b08-b4c7-cf01b61f587f",
+					"description": "StartFragment\n\nIn Codat, a company represents a business sharing access to their data. Each company can have multiple data connections to different data sources. For example, a business can have one connection to Xero for accounting data and a connection to Plaid for Open banking data.\n\nStartFragment\n\nWith Sync for Expenses each company will have two data connections:\n\n- One will be to their accounting platform\n- The other will be to the partner expense integration\n    \n\n<img src=\"https://content.pstmn.io/b962c926-31c5-4af0-8915-b665d7451480/aW1hZ2UucG5n\" alt=\"\" height=\"406\" width=\"504\">"
 				},
 				{
 					"name": "Config & Mapping",
@@ -681,90 +682,90 @@
 	],
 	"variable": [
 		{
-			"id": "3ac0a194-950f-4600-a3c0-dc7b06ad59c0",
+			"id": "8f6d2190-5f9b-403e-b2c9-35b1bada423a",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "2e7dc489-ffa8-44a1-83f3-c99e88aabe04",
+			"id": "575b483b-db9e-4814-b57e-f5c09ce0c205",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "83dcc739-90aa-47a9-a84d-8669ea015df3",
+			"id": "73d7eb21-e3fc-414c-9567-d233c793d333",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "c7f9b500-5c1b-436f-acba-b43df373b8fd",
+			"id": "b99adacd-5557-4747-8b08-df92d97238fa",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "029297b7-8420-428c-a87b-a1fd67092aae",
+			"id": "70572b5c-a619-4636-8d2f-fddd071c729c",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "233b0bb6-7e95-45c8-9bc2-e94a996a3cfa",
+			"id": "64c79b16-09a9-42b3-ae32-8ce70a3d4b49",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "da5eb6f0-a33a-40a7-986c-ee3e7704429d",
+			"id": "f771f85b-0efa-4718-9f48-f5c763c59d66",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "eba4d69f-afd7-4360-a2ff-382d7e4114ba",
+			"id": "e17e0bdc-7a84-4b9a-93b3-ef7bc2806809",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2fee0218-f517-40a5-b5ba-b2f5ad4e1058",
+			"id": "fdcea323-48aa-4a58-91a3-d0ad1db9acd6",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "8827338a-60fc-42cf-9cd3-694160bec70b",
+			"id": "20408c13-cc1f-4631-91a5-5b170ddf6f70",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "c2b45a3f-fb8c-4ea1-a6f2-489af5caa6db",
+			"id": "98b291c6-a807-4889-a030-837abe32ae47",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "55968eb3-8423-4a41-896b-9ab6f7c410a1",
+			"id": "b7ca0935-2edb-41fc-a721-92b0a56cd259",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eb0f116b-2445-46ee-af45-d5fb1a2aa56f",
+			"id": "93817bca-4d5a-420d-be33-93b04ce47149",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "d90398cc-8db0-4fce-bb11-11e0d6f7ba03",
+			"id": "b19fc743-401e-4dc6-b82b-a9ed95ce75b7",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "d5825bb6-6170-4499-8883-2d6ff11f1314",
+			"id": "50e6247f-ef37-4cfc-8d41-a20dbcda5bdc",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "223ec886-a9ae-4b17-abc9-6c2bbcc202b2",
+			"id": "646ccf06-e81c-40f7-9953-da5dc98acad4",
 			"key": "transactionId2",
 			"value": ""
 		}
