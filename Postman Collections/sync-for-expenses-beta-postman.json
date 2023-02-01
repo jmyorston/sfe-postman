@@ -46,7 +46,8 @@
 										}
 									}
 								},
-								"url": "{{baseUrl}}companies"
+								"url": "{{baseUrl}}companies",
+								"description": "StartFragment\n\nCompany creation should occur the moment an SMB of yours signs up for your app and is assigned an ID.\n\n- Populate the name value with the ID that you use for the company in your internal system so that it’s easier to identify the Codat company that corresponds to your record of the merchant.\n- Retain the company ID (hereafter referred to as companyId) from the response. It is crucial that you retain this value as you will need it for directing your customers to Link and managing their connections.\n- [Subscribe to an alert](https://docs.codat.io/docs/core-rules-create) for new company connections or use a [redirect parameter](https://docs.codat.io/docs/authentication-redirect#redirect-with-reserved-query-parameters) such as the status code to listen for a successful connection for the company once the user has been successfully authenticated.\n    \n\nYou can read a guide on how to create a Codat company [here](https://docs.codat.io/docs/build-your-own-authentication-journey#step-1-create-a-codat-company-when-a-user-signs-up-to-your-app).\n\nEndFragment"
 							},
 							"response": []
 						},
@@ -193,41 +194,6 @@
 							"response": []
 						},
 						{
-							"name": "GET Suppliers",
-							"id": "8f4156ce-9cc7-417a-9c13-1e397ea77c5e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}companies/:companyId/data/suppliers?query=metadata.isDeleted=false",
-									"host": [
-										"{{baseUrl}}companies"
-									],
-									"path": [
-										":companyId",
-										"data",
-										"suppliers"
-									],
-									"query": [
-										{
-											"key": "query",
-											"value": "metadata.isDeleted=false"
-										}
-									],
-									"variable": [
-										{
-											"key": "companyId",
-											"value": "{{companyId}}"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "Create Supplier",
 							"id": "31997a74-0fdf-4960-a8e7-46156a04c3bd",
 							"protocolProfileBehavior": {
@@ -265,6 +231,41 @@
 										{
 											"key": "connectionId",
 											"value": "{{accountingConnectionId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Suppliers",
+							"id": "8f4156ce-9cc7-417a-9c13-1e397ea77c5e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}companies/:companyId/data/suppliers?query=metadata.isDeleted=false",
+									"host": [
+										"{{baseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"data",
+										"suppliers"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "metadata.isDeleted=false"
+										}
+									],
+									"variable": [
+										{
+											"key": "companyId",
+											"value": "{{companyId}}"
 										}
 									]
 								}
@@ -680,90 +681,90 @@
 	],
 	"variable": [
 		{
-			"id": "45359897-bdc9-4f90-a91c-f68702a14e64",
+			"id": "3ac0a194-950f-4600-a3c0-dc7b06ad59c0",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "2b99f3f6-6b95-4850-86f7-4c561a1315d3",
+			"id": "2e7dc489-ffa8-44a1-83f3-c99e88aabe04",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "06850d91-32d2-4a7b-aeae-323b397a3b7a",
+			"id": "83dcc739-90aa-47a9-a84d-8669ea015df3",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "444d1ad0-a919-45d3-85d8-64b123765572",
+			"id": "c7f9b500-5c1b-436f-acba-b43df373b8fd",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "ec8f514c-4fea-49f8-8b24-237b8f6a0c7e",
+			"id": "029297b7-8420-428c-a87b-a1fd67092aae",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "5b7a51b7-cf21-4dc7-a982-b6a5924f145f",
+			"id": "233b0bb6-7e95-45c8-9bc2-e94a996a3cfa",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "4f1e874d-8d03-484a-9b42-c6aa6700f130",
+			"id": "da5eb6f0-a33a-40a7-986c-ee3e7704429d",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "8258c434-103d-4f33-b224-9441eebb997d",
+			"id": "eba4d69f-afd7-4360-a2ff-382d7e4114ba",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "01306afb-7f95-472d-b5a2-5c111b0f8463",
+			"id": "2fee0218-f517-40a5-b5ba-b2f5ad4e1058",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "537b7706-6e24-45c6-b932-601f5ffc02dc",
+			"id": "8827338a-60fc-42cf-9cd3-694160bec70b",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "76f541b3-5fc8-40fe-90c4-ea5989f6f677",
+			"id": "c2b45a3f-fb8c-4ea1-a6f2-489af5caa6db",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "4f524e0e-5a58-407d-9b05-2ec4ec1fea82",
+			"id": "55968eb3-8423-4a41-896b-9ab6f7c410a1",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c82fd300-0d71-4fc3-a594-e4eea12b1bfb",
+			"id": "eb0f116b-2445-46ee-af45-d5fb1a2aa56f",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "9e40b9a7-8d0e-412d-b5e8-5798c777c4f0",
+			"id": "d90398cc-8db0-4fce-bb11-11e0d6f7ba03",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "4c238d41-8486-4552-8500-9c7526216fd1",
+			"id": "d5825bb6-6170-4499-8883-2d6ff11f1314",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "9d438707-fb59-444f-b734-d90ca07fd93f",
+			"id": "223ec886-a9ae-4b17-abc9-6c2bbcc202b2",
 			"key": "transactionId2",
 			"value": ""
 		}
