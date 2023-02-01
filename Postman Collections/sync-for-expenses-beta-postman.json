@@ -120,7 +120,8 @@
 											"value": "{{companyId}}"
 										}
 									]
-								}
+								},
+								"description": "If at anypoint you want to see the status of the dataConnections e.g. to ensure your company is still linked before sending data - you can make a request to the dataConnections object.\n\nYou can also subscribe to the webhook rule `DataConnectionStatusChanged` to receive alerts when a company disconnects."
 							},
 							"response": []
 						}
@@ -683,90 +684,90 @@
 	],
 	"variable": [
 		{
-			"id": "c9baa69d-f8d1-465b-a548-bae0869c8c69",
+			"id": "b8fe60e4-6aad-48d9-9ace-202dbc2433d7",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "b9263974-6211-484c-9a71-2c21473ad465",
+			"id": "4bc99450-df7a-45e6-9598-b13e1de90f29",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "1a2164c3-33e6-4b7c-92d7-b8ab3da60334",
+			"id": "313c903a-7d22-4768-9510-1ea4df8ee566",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "0d2cbeaf-84ff-48e0-987d-a85b561bd640",
+			"id": "51a41b5f-f05c-484a-bf4f-5f605c128ab2",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "69c59953-1d66-4a0f-a6b2-e4a2287b59fe",
+			"id": "f4bef76d-b1da-4c69-9a0c-e876c48fa50b",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "cb9a8ba1-b933-4fcd-9b78-293a14774d0e",
+			"id": "9220ec0a-e221-4948-8463-d55c005df9da",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "ffd91a6c-8699-4ecf-a782-e84644b82207",
+			"id": "ae43317d-dee4-47b8-90b2-42db1312ac56",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "cf28bd0e-28b3-4090-9094-10c5b2b32204",
+			"id": "9669075c-9d33-4d0d-964c-f8d6c4ab1433",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7f55ca94-5181-49df-af7a-aba55d2b90a9",
+			"id": "6545e69c-88c0-48ff-9a28-eb1d2b2a81ee",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "43c2e89d-71d7-4e39-b1ea-51c12f9b9f8d",
+			"id": "d7b90e64-12fe-4999-8a63-6a01999aeb7e",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "fb7e63fc-ca9a-4fc6-acde-426825b2e342",
+			"id": "9255f028-029b-4017-82a4-4a63e62efee1",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "16aeda13-1b28-41b4-ba4e-affbadc3ca52",
+			"id": "4195f9e1-2494-4ed7-b012-478cf8329d1c",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a15aac53-0600-4128-beaf-d378f3f6d9b4",
+			"id": "e1e66550-825b-402f-9dd9-d60bafdf825e",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "0271db95-cf62-40a1-b2ce-4f2640158f58",
+			"id": "aad9d175-dbbc-48e2-abe3-d91fcb10739c",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "64b3e47d-e0e4-49f3-adb9-748d9f368c5d",
+			"id": "bd13b0df-6c7c-4932-aec9-c75bc154caab",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "51cfa6c9-7acc-4cd4-8bd1-eb38a275e461",
+			"id": "22c968cd-0357-4009-b043-d71fa0aaf24e",
 			"key": "transactionId2",
 			"value": ""
 		}
