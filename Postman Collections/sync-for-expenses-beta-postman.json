@@ -208,7 +208,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"custoemrName\": \"{{$randomCompanyName}}\",\r\n  \"contactName\": \"{{$randomFirstName}}\",\r\n  \"emailAddress\": \"{{$randomEmail}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"registrationNumber\": \"string\",\r\n  \"taxNumber\": \"string\",\r\n  \"status\": \"Active\",\r\n  \"modifiedDate\": \"{{$isoTimestamp}}\",\r\n  \"sourceModifiedDate\": \"{{$isoTimestamp}}\"\r\n}",
+									"raw": "{\r\n  \"customerName\": \"{{$randomCompanyName}}\",\r\n  \"contactName\": \"{{$randomFirstName}}\",\r\n  \"emailAddress\": \"{{$randomEmail}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"registrationNumber\": \"string\",\r\n  \"taxNumber\": \"string\",\r\n  \"status\": \"Active\",\r\n  \"modifiedDate\": \"{{$isoTimestamp}}\",\r\n  \"sourceModifiedDate\": \"{{$isoTimestamp}}\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -216,7 +216,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrl}}companies/:companyId/connections/:connectionId/push/customer",
+									"raw": "{{baseUrl}}companies/:companyId/connections/:connectionId/push/customers",
 									"host": [
 										"{{baseUrl}}companies"
 									],
@@ -225,7 +225,7 @@
 										"connections",
 										":connectionId",
 										"push",
-										"customer"
+										"customers"
 									],
 									"variable": [
 										{
@@ -731,90 +731,90 @@
 	],
 	"variable": [
 		{
-			"id": "e86dbc09-0635-4fd5-b77a-06fd601b8292",
+			"id": "b5671efe-7b1d-4af5-9be8-4ce42a7cbb4e",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "c073b09e-7a56-4412-9263-339fe4200fa7",
+			"id": "cce13fdb-d484-483c-9c27-d4914f693953",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "3762a35a-f75b-4f19-8705-b1e1f4aade05",
+			"id": "b23404ae-105a-42e6-9989-ddb13a78b44e",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "68a74d9e-5f73-4195-bb7a-070616fe280b",
+			"id": "4cac5700-c351-49bd-9ef4-97aea4c37547",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "11e538d0-673a-4dc8-8410-3e2a47451c3f",
+			"id": "c5b7ae16-1538-4d61-b327-4e38b9153eb1",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "bd87c257-1cb6-4a67-98c5-6def1e854b04",
+			"id": "0ca0a14e-8bc6-4b3e-98c8-78d98248a885",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "62d88cdb-0c34-4a38-a14f-75050e3fe037",
+			"id": "97e00942-7829-4ed4-9fa0-d6024aa817b9",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "52a341fb-fb5b-43ff-aade-33cc6a619ed7",
+			"id": "850250d7-433d-440f-bd28-7ec274ddf45b",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6540c863-4213-4c2a-bd19-eac48a17b875",
+			"id": "4df7f5dc-7d67-40a8-b5c9-5fbe96b11814",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "44e2b486-ed40-448f-beb5-c12053835fd2",
+			"id": "e0698a6b-a1ae-4568-ad05-1fe6d454b9fe",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "7ce0e4ad-d180-4707-9748-f3e67e0a3600",
+			"id": "e8154086-0a16-4947-aa92-4d22e1fd7601",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "6fca26ec-6950-4518-888e-d63f6eb836fe",
+			"id": "8d739c85-2b3b-4015-a588-8a45a602bb2a",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b66b9313-514a-4ab7-98aa-2220289a3af1",
+			"id": "4f614251-e173-4af8-a715-d4c97026643d",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "3cf24e13-b567-48cc-a35f-14eaf818555b",
+			"id": "3a27bf71-d81e-4b64-86f5-28f1f7d30d6c",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "dbfb8515-35c8-4097-898f-01dd38110d69",
+			"id": "8a9276b5-6342-4b80-ae42-2ddd50f14199",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "51ec82fb-3539-49e3-bd9f-5c252ac16d8b",
+			"id": "370fb60f-d514-43ef-b367-c7377b269277",
 			"key": "transactionId2",
 			"value": ""
 		}
