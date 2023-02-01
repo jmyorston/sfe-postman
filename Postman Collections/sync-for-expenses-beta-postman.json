@@ -47,7 +47,7 @@
 									}
 								},
 								"url": "{{baseUrl}}companies",
-								"description": "Company creation should occur the moment an SMB of yours initiates the process to connect their accounting software.\n\n- Populate the name value with the ID that you use for the company in your internal system so that it’s easier to identify the Codat company that corresponds to your record of the merchant.\n- You can specify which accounting package they are using through the `platformKey` e.g. `gbol` for Xero and\n- Retain the `companyId` (hereafter referred to as companyId) from the response. It is crucial that you retain this value as you will need it for directing your customers to Link and managing their connections.\n- [Subscribe to an alert](https://docs.codat.io/docs/core-rules-create) for new company connections or use a [redirect parameter](https://docs.codat.io/docs/authentication-redirect#redirect-with-reserved-query-parameters) such as the status code to listen for a successful connection for the company once the user has been successfully authenticated.\n    \n\nYou can read a guide on how to create a Codat company [here](https://docs.codat.io/docs/build-your-own-authentication-journey#step-1-create-a-codat-company-when-a-user-signs-up-to-your-app)."
+								"description": "Company creation should occur the moment an SMB of yours initiates the process to connect their accounting software.\n\n- Populate the name value with the ID that you use for the company in your internal system so that it’s easier to identify the Codat company that corresponds to your record of the merchant.\n- You can specify which accounting package they are using through the `platformKey` e.g. `gbol` for Xero and `qhyg` for QuickBooks Online\n- Retain the `companyId` (hereafter referred to as companyId) from the response. It is crucial that you retain this value as you will need it for directing your customers to Link and managing their connections.\n- [Subscribe to an alert](https://docs.codat.io/docs/core-rules-create) for new company connections or use a [redirect parameter](https://docs.codat.io/docs/authentication-redirect#redirect-with-reserved-query-parameters) such as the status code to listen for a successful connection for the company once the user has been successfully authenticated.\n    \n\nYou can read a guide on how to create a Codat company [here](https://docs.codat.io/docs/build-your-own-authentication-journey#step-1-create-a-codat-company-when-a-user-signs-up-to-your-app)."
 							},
 							"response": []
 						},
@@ -682,90 +682,90 @@
 	],
 	"variable": [
 		{
-			"id": "5fb71d84-9130-4d0e-9ca7-e7c09c2a9bcf",
+			"id": "4f7d9d4e-9706-458e-9770-ee2580ecdbb5",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "8af1f4f8-f819-4f05-a29f-b28acba4be9b",
+			"id": "c65fc25a-108b-4f3c-8faf-bc0d44e6ec96",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "9e3ec217-fc89-4cb2-9c8b-5d67a847e498",
+			"id": "72aa8bcc-9e85-4778-9366-be9606534174",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "b2c8ca39-5b8e-41f8-84e0-67799cad6779",
+			"id": "14efea7c-11a6-462c-8dc9-bebd32266c14",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "9e69399e-8d05-400f-b3ab-2b92d1915a09",
+			"id": "ecf7cddd-8c9e-4b84-ab96-ee49b8282073",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "59015962-72b4-4dcf-971b-d107e57152d1",
+			"id": "8bfe8fed-8cf8-4ff2-ab61-eafc710822ac",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "81e6b060-a45d-4c13-89fe-3b72495704f0",
+			"id": "aab98480-ce45-4e25-b429-9dd9ea96b53a",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "3b5ce8b7-e098-42b8-9007-8718cad87057",
+			"id": "381fb840-ddde-43e3-bc66-fc450bd4cdac",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "52b0c2a7-d94b-4a3f-9dd6-bbb7382e8a70",
+			"id": "ed35df56-f9e7-4d48-992d-c498dddf9d56",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "bde1ea5a-c404-4e59-8ff3-2ab657cf387b",
+			"id": "1f873066-bc6f-4080-bf71-e7e49d9c7821",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "272968d1-25e1-4725-9547-53df7a811674",
+			"id": "1eaa29f0-1b3b-4709-940b-416921fac574",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "0010ef4d-0ca1-421a-99d8-fda1361dcf17",
+			"id": "1d4c2f04-e9a1-458b-abc3-7b5ffff93b0f",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ba8b346-fbd5-48e7-8914-764044bab611",
+			"id": "3108c8d4-2daa-43e3-9f94-a20dce76a398",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "3a94b738-3677-4856-936d-fd1ef7397b50",
+			"id": "6688f377-55e1-4891-9c49-06a81e66417f",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "dde7848f-9833-4304-85da-952eff939b46",
+			"id": "9488b2e5-67ae-4a1a-a7fe-5f0de083de6e",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "08c3f8d1-e97d-4af1-8967-5354bd96ccd3",
+			"id": "cfef0e15-c501-4a2c-a61c-b591420a1b56",
 			"key": "transactionId2",
 			"value": ""
 		}
