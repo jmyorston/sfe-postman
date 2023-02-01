@@ -47,7 +47,7 @@
 									}
 								},
 								"url": "{{baseUrl}}companies",
-								"description": "StartFragment\n\nCompany creation should occur the moment an SMB of yours signs up for your app and is assigned an ID.\n\n- Populate the name value with the ID that you use for the company in your internal system so that it’s easier to identify the Codat company that corresponds to your record of the merchant.\n- Retain the company ID (hereafter referred to as companyId) from the response. It is crucial that you retain this value as you will need it for directing your customers to Link and managing their connections.\n- [Subscribe to an alert](https://docs.codat.io/docs/core-rules-create) for new company connections or use a [redirect parameter](https://docs.codat.io/docs/authentication-redirect#redirect-with-reserved-query-parameters) such as the status code to listen for a successful connection for the company once the user has been successfully authenticated.\n    \n\nYou can read a guide on how to create a Codat company [here](https://docs.codat.io/docs/build-your-own-authentication-journey#step-1-create-a-codat-company-when-a-user-signs-up-to-your-app).\n\nEndFragment"
+								"description": "Company creation should occur the moment an SMB of yours initiates the process to connect their accounting software.\n\n- Populate the name value with the ID that you use for the company in your internal system so that it’s easier to identify the Codat company that corresponds to your record of the merchant.\n- You can specify which accounting package they are using through the `platformKey` e.g. `gbol` for Xero and\n- Retain the `companyId` (hereafter referred to as companyId) from the response. It is crucial that you retain this value as you will need it for directing your customers to Link and managing their connections.\n- [Subscribe to an alert](https://docs.codat.io/docs/core-rules-create) for new company connections or use a [redirect parameter](https://docs.codat.io/docs/authentication-redirect#redirect-with-reserved-query-parameters) such as the status code to listen for a successful connection for the company once the user has been successfully authenticated.\n    \n\nYou can read a guide on how to create a Codat company [here](https://docs.codat.io/docs/build-your-own-authentication-journey#step-1-create-a-codat-company-when-a-user-signs-up-to-your-app)."
 							},
 							"response": []
 						},
@@ -125,7 +125,7 @@
 						}
 					],
 					"id": "aedd3da2-5454-4b08-b4c7-cf01b61f587f",
-					"description": "StartFragment\n\nIn Codat, a company represents a business sharing access to their data. Each company can have multiple data connections to different data sources. For example, a business can have one connection to Xero for accounting data and a connection to Plaid for Open banking data.\n\nStartFragment\n\nWith Sync for Expenses each company will have two data connections:\n\n- One will be to their accounting platform\n- The other will be to the partner expense integration\n    \n\nEndFragmen\n\n  \n\nEndFragmen"
+					"description": "StartFragment\n\nIn Codat, a company represents a business sharing access to their data. Each company can have multiple data connections to different data sources. For example, a business can have one connection to Xero for accounting data and a connection to Plaid for Open banking data.\n\nStartFragment\n\nWith Sync for Expenses each company will have two data connections:\n\n- One will be to their accounting platform\n- The other will be to the partner expense integration\n    \n\n<img src=\"https://content.pstmn.io/b962c926-31c5-4af0-8915-b665d7451480/aW1hZ2UucG5n\" alt=\"\" height=\"406\" width=\"504\">"
 				},
 				{
 					"name": "Config & Mapping",
@@ -682,90 +682,90 @@
 	],
 	"variable": [
 		{
-			"id": "5381d32e-b88a-44dc-9bea-228cbec45993",
+			"id": "8d0922bb-1a61-4f50-91b6-74afc135857c",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "fa258e43-44fb-441b-874f-45e8e0c117e6",
+			"id": "11fbd74c-05fc-4f2a-abde-5990db626155",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "6fe7d2fd-9ff8-456e-b388-5d726f709e61",
+			"id": "710be2b5-5a59-4b74-af41-7f89ca630115",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "d86d8180-512d-4141-91b3-01be76687bdb",
+			"id": "2cd9ff22-7e04-4310-b90c-d36ebcc3b943",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "aa080df4-f552-4b8b-894a-8b05142da483",
+			"id": "ffd018b4-8f2c-49e8-978f-6943371c59f8",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "e40a1607-b129-4ed9-8c82-f60b73e70dc8",
+			"id": "1c7f7146-4093-4266-8131-aa378ed35ace",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "c05e74c5-7a11-4c56-be65-35719a3e8b8b",
+			"id": "0bbe048c-5d58-4495-915a-6b265594f34d",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "8848d24a-1c3b-42e6-875b-4bb384993258",
+			"id": "f21b19ca-73ec-4f80-b3d4-2418d4636227",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6e5b3b54-c4ac-4914-b4c8-ddaa4b6308e3",
+			"id": "bb407bf5-4ced-4b77-91bf-269ea955cb87",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "0e160670-ad63-4c71-ab93-de42fed17b00",
+			"id": "24df73e3-3445-439b-973b-5be52eb521da",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "a896a6a5-511f-4004-9806-38d5ff5d0d89",
+			"id": "df394e22-bfdb-447e-80f7-a64ff337e538",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "ca184dad-fea8-44e3-b98e-534e9b4fb681",
+			"id": "e60b7293-b6f5-4ba3-8674-7d9c23d9f46b",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "81ee6bfb-bbd0-4c7f-abd3-7dc0e4daf279",
+			"id": "61ae9436-2930-4ab2-91d0-5781a7d6dd65",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "4f2086a3-87f7-4863-8a9c-b95e0114180e",
+			"id": "34478769-901b-46a2-bf7f-09edecefe770",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "c3b40eb1-3981-4b75-bea9-ec42db3b3f3d",
+			"id": "315020ee-9cf6-464c-8e9c-b00b393554f4",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "eff083a2-3aa7-4f31-bf75-f633936f3d78",
+			"id": "89f96f26-cf7c-4877-b5fa-abaf25da3695",
 			"key": "transactionId2",
 			"value": ""
 		}
