@@ -275,7 +275,8 @@
 											"value": "{{companyId}}"
 										}
 									]
-								}
+								},
+								"description": "StartFragment\n\nA `customerId` is required in the config to associate all income related activities against.\n\nYou can use this request to retreive a list of available customers from your customers accounting software you can also add additional query parameters e.g.\n\n- `query=metadata.isDeleted=false&&supplierName={supplierName}`\n    \n\nEndFragment"
 							},
 							"response": []
 						},
@@ -733,90 +734,90 @@
 	],
 	"variable": [
 		{
-			"id": "c1787013-246a-4830-9720-e9cab55e8e5e",
+			"id": "98ebfee9-f579-455a-afc9-e6879e3eb181",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "371fa2ee-1d50-4d87-8715-cfdcbef1be9e",
+			"id": "8afa8f1f-74a2-4697-ae28-193919f0251a",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "e317cc68-aeab-4a9f-897a-0de5467386aa",
+			"id": "e4f1f5cc-e55a-40be-8511-f791df641407",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "641a4701-e51e-4b1c-ac99-95392241a3e3",
+			"id": "29faedc3-94f5-4244-b6f6-dcc503793389",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "c2a549cf-03f5-4aad-a9dd-c14e8bc22fbe",
+			"id": "9c119b4d-75ce-460c-8cb2-b3cb032ed8c9",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "519087aa-dacd-45fd-959f-a4f2a4224ef3",
+			"id": "5e2adaf6-2037-440d-bc67-a0080faf596b",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "fdca93cd-4fe2-4210-b7ff-623d7468e8bc",
+			"id": "1362f8fe-8efe-4a6b-87cd-8b1cefc0a309",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "ca3f386e-90c1-4cb1-893b-9fbfaa45a15e",
+			"id": "c992a8a6-c581-4707-a0c4-99502b9ef33c",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "64cf5e9e-c069-4f27-82ec-48a152159c5e",
+			"id": "317b4479-18ff-4aca-ad9b-ab7c7b6f3f8c",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "30c60d21-dd04-44c1-b150-06e4c4f65a21",
+			"id": "1a70a1e3-7b67-4d25-a2f1-578a1e4cd7c4",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "b6888d10-be8f-46a0-99ad-42520b0f04c7",
+			"id": "04547242-3b68-496f-8b6e-0ce2060ed75d",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "96a28f64-d97a-4d92-aae6-4f2db69648f2",
+			"id": "dd2fb210-d64c-47b8-b67e-85dae17e7921",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4bcdf987-3daa-4006-a121-b2b50e04d6e7",
+			"id": "78a61ce1-7cef-49ad-aa68-ba4ebb656315",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "9f0e4849-248f-4261-af16-13cd3d82e18c",
+			"id": "f6c5f37a-e2ae-4b03-9e98-e18a948a3adf",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "e682ab0e-a426-4645-90ad-ebaf955aaf7a",
+			"id": "a7b32c7c-c3b6-473c-8655-a00ff27883f7",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "5a76e863-6d66-4660-a683-44605ed11a7a",
+			"id": "717158ec-5b8d-45f2-b317-0d3e7fe77578",
 			"key": "transactionId2",
 			"value": ""
 		}
