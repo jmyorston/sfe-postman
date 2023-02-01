@@ -125,7 +125,7 @@
 						}
 					],
 					"id": "aedd3da2-5454-4b08-b4c7-cf01b61f587f",
-					"description": "StartFragment\n\nIn Codat, a company represents a business sharing access to their data. Each company can have multiple data connections to different data sources. For example, a business can have one connection to Xero for accounting data and a connection to Plaid for Open banking data.\n\nStartFragment\n\nWith Sync for Expenses each company will have two data connections:\n\n- One will be to their accounting platform\n- The other will be to the partner expense integration\n    \n\n<img src=\"https://content.pstmn.io/b962c926-31c5-4af0-8915-b665d7451480/aW1hZ2UucG5n\" alt=\"\" height=\"406\" width=\"504\">"
+					"description": "StartFragment\n\nIn Codat, a company represents a business sharing access to their data. Each company can have multiple data connections to different data sources. For example, a business can have one connection to Xero for accounting data and a connection to Plaid for Open banking data.\n\nStartFragment\n\nWith Sync for Expenses each company will have two data connections:\n\n- One will be to their accounting platform\n- The other will be to the partner expense integration\n    \n\nEndFragmen\n\n  \n\nEndFragmen"
 				},
 				{
 					"name": "Config & Mapping",
@@ -682,90 +682,90 @@
 	],
 	"variable": [
 		{
-			"id": "8f6d2190-5f9b-403e-b2c9-35b1bada423a",
+			"id": "5381d32e-b88a-44dc-9bea-228cbec45993",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "575b483b-db9e-4814-b57e-f5c09ce0c205",
+			"id": "fa258e43-44fb-441b-874f-45e8e0c117e6",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "73d7eb21-e3fc-414c-9567-d233c793d333",
+			"id": "6fe7d2fd-9ff8-456e-b388-5d726f709e61",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "b99adacd-5557-4747-8b08-df92d97238fa",
+			"id": "d86d8180-512d-4141-91b3-01be76687bdb",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "70572b5c-a619-4636-8d2f-fddd071c729c",
+			"id": "aa080df4-f552-4b8b-894a-8b05142da483",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "64c79b16-09a9-42b3-ae32-8ce70a3d4b49",
+			"id": "e40a1607-b129-4ed9-8c82-f60b73e70dc8",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "f771f85b-0efa-4718-9f48-f5c763c59d66",
+			"id": "c05e74c5-7a11-4c56-be65-35719a3e8b8b",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "e17e0bdc-7a84-4b9a-93b3-ef7bc2806809",
+			"id": "8848d24a-1c3b-42e6-875b-4bb384993258",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fdcea323-48aa-4a58-91a3-d0ad1db9acd6",
+			"id": "6e5b3b54-c4ac-4914-b4c8-ddaa4b6308e3",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "20408c13-cc1f-4631-91a5-5b170ddf6f70",
+			"id": "0e160670-ad63-4c71-ab93-de42fed17b00",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "98b291c6-a807-4889-a030-837abe32ae47",
+			"id": "a896a6a5-511f-4004-9806-38d5ff5d0d89",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "b7ca0935-2edb-41fc-a721-92b0a56cd259",
+			"id": "ca184dad-fea8-44e3-b98e-534e9b4fb681",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "93817bca-4d5a-420d-be33-93b04ce47149",
+			"id": "81ee6bfb-bbd0-4c7f-abd3-7dc0e4daf279",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "b19fc743-401e-4dc6-b82b-a9ed95ce75b7",
+			"id": "4f2086a3-87f7-4863-8a9c-b95e0114180e",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "50e6247f-ef37-4cfc-8d41-a20dbcda5bdc",
+			"id": "c3b40eb1-3981-4b75-bea9-ec42db3b3f3d",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "646ccf06-e81c-40f7-9953-da5dc98acad4",
+			"id": "eff083a2-3aa7-4f31-bf75-f633936f3d78",
 			"key": "transactionId2",
 			"value": ""
 		}
