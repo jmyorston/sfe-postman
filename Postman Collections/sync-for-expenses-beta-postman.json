@@ -92,7 +92,8 @@
 											"value": "{{companyId}}"
 										}
 									]
-								}
+								},
+								"description": "The `partnerExpense` connection allows you to push `expense-transaction` datasets to Codat in a standardised way."
 							},
 							"response": []
 						},
@@ -682,90 +683,90 @@
 	],
 	"variable": [
 		{
-			"id": "4f7d9d4e-9706-458e-9770-ee2580ecdbb5",
+			"id": "c9baa69d-f8d1-465b-a548-bae0869c8c69",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "c65fc25a-108b-4f3c-8faf-bc0d44e6ec96",
+			"id": "b9263974-6211-484c-9a71-2c21473ad465",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "72aa8bcc-9e85-4778-9366-be9606534174",
+			"id": "1a2164c3-33e6-4b7c-92d7-b8ab3da60334",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "14efea7c-11a6-462c-8dc9-bebd32266c14",
+			"id": "0d2cbeaf-84ff-48e0-987d-a85b561bd640",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "ecf7cddd-8c9e-4b84-ab96-ee49b8282073",
+			"id": "69c59953-1d66-4a0f-a6b2-e4a2287b59fe",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "8bfe8fed-8cf8-4ff2-ab61-eafc710822ac",
+			"id": "cb9a8ba1-b933-4fcd-9b78-293a14774d0e",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "aab98480-ce45-4e25-b429-9dd9ea96b53a",
+			"id": "ffd91a6c-8699-4ecf-a782-e84644b82207",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "381fb840-ddde-43e3-bc66-fc450bd4cdac",
+			"id": "cf28bd0e-28b3-4090-9094-10c5b2b32204",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ed35df56-f9e7-4d48-992d-c498dddf9d56",
+			"id": "7f55ca94-5181-49df-af7a-aba55d2b90a9",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "1f873066-bc6f-4080-bf71-e7e49d9c7821",
+			"id": "43c2e89d-71d7-4e39-b1ea-51c12f9b9f8d",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "1eaa29f0-1b3b-4709-940b-416921fac574",
+			"id": "fb7e63fc-ca9a-4fc6-acde-426825b2e342",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "1d4c2f04-e9a1-458b-abc3-7b5ffff93b0f",
+			"id": "16aeda13-1b28-41b4-ba4e-affbadc3ca52",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3108c8d4-2daa-43e3-9f94-a20dce76a398",
+			"id": "a15aac53-0600-4128-beaf-d378f3f6d9b4",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "6688f377-55e1-4891-9c49-06a81e66417f",
+			"id": "0271db95-cf62-40a1-b2ce-4f2640158f58",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "9488b2e5-67ae-4a1a-a7fe-5f0de083de6e",
+			"id": "64b3e47d-e0e4-49f3-adb9-748d9f368c5d",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "cfef0e15-c501-4a2c-a61c-b591420a1b56",
+			"id": "51cfa6c9-7acc-4cd4-8bd1-eb38a275e461",
 			"key": "transactionId2",
 			"value": ""
 		}
