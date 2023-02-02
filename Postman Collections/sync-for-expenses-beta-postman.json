@@ -389,9 +389,9 @@
 									],
 									"variable": [
 										{
-											"id": "52e3d519-7b4a-4508-8a7f-21e14d10907d",
 											"key": "companyId",
-											"value": "{{companyId}}"
+											"value": "{{companyId}}",
+											"description": "Unique identifier of the Company."
 										}
 									]
 								},
@@ -461,9 +461,9 @@
 									],
 									"variable": [
 										{
-											"id": "fc465499-52b9-4053-b150-377c187a062c",
 											"key": "companyId",
-											"value": "{{companyId}}"
+											"value": "{{companyId}}",
+											"description": "Unique identifier of the Company."
 										}
 									]
 								},
@@ -747,90 +747,90 @@
 	],
 	"variable": [
 		{
-			"id": "b0f5a3ca-946e-406e-bfae-a1cc41715f54",
+			"id": "78658a7f-764c-458b-a935-c9662dde0b13",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "b75181fb-6780-4521-85b3-a44455bf4f82",
+			"id": "46fab5e5-9756-4370-8666-1fb2e24ed431",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "6b437509-aaac-4093-913d-45a60f216e6a",
+			"id": "b0e7699f-5586-4c0c-86e6-f8422c35df4f",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "613fce3a-0b86-4537-aa59-faef0b1379ba",
+			"id": "5ddf8ee7-acf8-42e7-be17-b7697b86423c",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "feb80ddb-dfe6-4542-a87f-deeac7f3d440",
+			"id": "6d6d3654-42d4-4130-a873-255e1f3bdccc",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "735355d8-33a8-4d45-a1f2-89cb8256aa66",
+			"id": "18d7c2a8-e08d-4282-a2bd-6d44aff3b179",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "70e41ff8-2ab3-4915-9f4d-c033aa93557d",
+			"id": "4a761b18-d35f-47a1-b2d7-80f14d4f84a4",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "05e5ce18-255f-4aa0-b7dd-fd0ab0059f42",
+			"id": "b223122c-27e9-4047-b9c3-d867b653bd91",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fd6f5a34-f6de-4bf6-a2e3-9ebdb2426d2d",
+			"id": "30a494c9-712a-4f63-9a73-f823073b389a",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "29b176e3-e80d-4b53-8600-725c9fe815c0",
+			"id": "1fc24169-ad40-463c-a107-427c2e71fe6e",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "22f75e81-ed6d-472f-bcf3-e9bb5f09bbb7",
+			"id": "ed0eaa67-9c68-4a30-a028-7d4f9abd34b0",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "71b3c473-43ce-4bc5-a50a-ccb7dddcc4c7",
+			"id": "8684e1a2-6fe3-4918-b090-f5e229ff9934",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dbaacc23-d490-411f-8f39-f3438cd57715",
+			"id": "375a51c6-c8b3-43b2-bd7c-9654032a5244",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "654c92d3-9595-4ff2-b5ad-847f10a3104d",
+			"id": "646ef9ea-16fe-4df4-8e22-da78180b69e7",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "0b90263b-4d9e-4bc4-902c-d41fc97b5c61",
+			"id": "1622cd4b-f16c-4c83-8f34-5d619feaa623",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "194d3f4f-1d25-4737-98e3-2c786c3c7b7f",
+			"id": "eb7d342a-3060-4cd2-a6fb-f3a5ce8aeb20",
 			"key": "transactionId2",
 			"value": ""
 		}
