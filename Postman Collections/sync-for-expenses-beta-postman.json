@@ -460,7 +460,8 @@
 											"value": "{{companyId}}"
 										}
 									]
-								}
+								},
+								"description": "StartFragment\n\nA dataset is made up of up to 50 expense-transactions - in Sync for Expenses, an expense transaction represents the context behind the purchase.\n\nIt can include details about the purchase, for example:\n\n- Which account in the general ledger the transaction should be reconciled to\n- The associated tax rates\n- Any applicable tracking categories\n    \n\nWhen pushing expenses, use your transaction `id` so that it can serve as an idempotency key. Codat validates `id`'s to ensure that every `id` is unique to a company to prevent duplicate transactions being created.\n\nAll transactions should have positive signage, with the transaction type determining how this affects your customers account balance.\n\nStartFragment\n\n| **TRANSACTION TYPE** | **DESCRIPTION AND USAGE** |\n| --- | --- |\n| **Payment** | Is used to represent any spend that takes place on the account and interest on credit purchases. |\n| **Refund** | Can be used to represent any refunds and returns on an original transaction. |\n| **Reward** | Can be used to represent reward redemption such as points for cash. |\n| **Chargeback** | Is similar, to a refund in behaviour and represents a return of transaction/payment sum which may have been disputed. |\n| **AdjustmentIn** | An adjustment that decreases the balance of the credit account.  <br>Or increases the balance of a bank account. |\n| **AdjustmentOut** | An adjustment that increases the balance of the credit account. Or decreases the balance of a bank account. This Can be used to represent write-off's & transaction adjustments such as foreign exchange adjustments |\n| **TransferIn** | Can be used to represent a top up of debit card account, a pay down of a credit card account. |\n| **TransferOut** | A transfer out could be used for a bank withdrawal balance transfer or similar movement of money from the `selectedBankAccount` |\n\nEndFragment"
 							},
 							"response": []
 						}
@@ -735,90 +736,90 @@
 	],
 	"variable": [
 		{
-			"id": "72e32124-cff0-4136-ab05-ce90ea9d5ff0",
+			"id": "79711e22-ee60-4817-9b29-26322ccbd530",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "a3c79dfe-f603-41ac-be96-ea23b0bbb33a",
+			"id": "2388dc09-62ac-4642-9735-25af2bf548ca",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "83682e66-29b6-4a72-8153-780b092fac2c",
+			"id": "2a81c553-dda7-430a-bce8-db0db25fcaab",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "3169fa54-b0c3-415c-b874-413c98bca9fb",
+			"id": "980f20bc-e4e4-42a4-8c2b-affdc8192c76",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "6a759821-6325-442f-896a-690019f87c3a",
+			"id": "808b0341-56d8-42ba-9257-45291f629a94",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "5b6737a6-ed06-4926-9748-e4bf7f93d8e0",
+			"id": "073aaf71-bc7f-4446-a88f-cda830c30e99",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "24a0f659-5cd4-4e08-a7f7-604122c785d0",
+			"id": "ff792dec-a8c5-45ae-bbd9-ceca6cca2c8c",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "e21d4197-e32d-4cef-8ee4-908fd02ebce5",
+			"id": "2ec4f07b-2576-4088-98c7-25f9b62781ef",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e503d17-77e7-4d45-89bf-808f9dea523a",
+			"id": "810e747b-1881-4077-b0c4-011643a2369c",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "ecb8365b-6a0a-4cbe-8722-49992c068469",
+			"id": "f447fea0-559d-4c26-887d-b881704f3e6d",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "99bcf8ce-8792-4a1a-9bf5-54a030b913db",
+			"id": "dedc180c-7b7c-49f9-bd05-a24fbea22a6c",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "f80eb7cf-9d05-4859-bc6f-722d91eeaa4f",
+			"id": "b92c9fe3-60a0-4113-8098-40d9127065c6",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "355badb3-1846-4f22-9101-96355ba2a4a5",
+			"id": "6f426efa-1a1b-41b5-9f39-5911618e5e56",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "1eab90bb-150c-4e30-90df-3dad1b034867",
+			"id": "9ec585d0-d9ee-4d1d-b16e-5891bb687f8e",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "0e35e1f2-2bae-4f88-9864-80c2a9091408",
+			"id": "bb28111b-fd2f-4acd-9648-169179538cec",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "06720788-f4be-44e1-9172-b5e51e4cf75f",
+			"id": "42bdd08c-a238-4acd-8e1a-0cc8facc8f44",
 			"key": "transactionId2",
 			"value": ""
 		}
