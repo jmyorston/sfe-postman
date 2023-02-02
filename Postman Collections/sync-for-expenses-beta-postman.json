@@ -679,7 +679,8 @@
 									"value": "{{transactionId1}}"
 								}
 							]
-						}
+						},
+						"description": "StartFragment\n\nAdding a receipt to the transaction can be done after the sync, different accounting software supports different file formats and sizes so its best to check [here](https://docs.codat.io/docs/datamodel-accounting-attachments#options-for-pushing-attachments-to-the-accounting-platform) for the supported options."
 					},
 					"response": []
 				}
@@ -740,90 +741,90 @@
 	],
 	"variable": [
 		{
-			"id": "52121298-d64c-402a-b283-02496c0975a1",
+			"id": "f4cd3911-5f5c-4467-8bef-f15ad285d922",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "0e83ddbd-72e9-4c43-9e69-fb583759edfb",
+			"id": "ae061850-cebe-4af7-8b8e-0962b61fbcbf",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "fa0e409c-7b24-4fd2-b100-99c14ae20e22",
+			"id": "e58827e9-3bb1-432d-9640-8e12baf05300",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "9c826aa2-9f92-46f0-8f5b-4427ddebd957",
+			"id": "71dee313-1deb-4743-88a2-8416c9ce799c",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "bc8ce26e-750e-418b-92b5-13cc638ecdf4",
+			"id": "6519a4a3-b030-4d68-9e03-0b378381e4a8",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "2651a783-f6fc-4e5c-a7c3-aac4496fb1c2",
+			"id": "a0db5470-c1a3-4dd5-a7d7-15250958a7f2",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "8064cd96-3fa9-47a0-ab93-d4305833cfdb",
+			"id": "cd9ef295-dbc5-4a95-99c3-0e6a09fecbe7",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "03bab0a5-cde8-49d1-bd83-3bad15491e84",
+			"id": "8add564e-9fb7-46fe-a9d0-156056da2540",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "49c0a6f6-55b5-413a-a13f-840ad1651388",
+			"id": "50b6f727-3c9e-4ada-a43f-da4027655f2e",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "9791bad0-fb02-4509-9ee7-80fee8cd0e97",
+			"id": "87bf0a97-1546-478b-9c91-070371a3dfc7",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "65c66950-4f41-41b6-a3fd-c2bbcfa3937a",
+			"id": "c3c3201e-5de0-40db-b758-0cd28d265a25",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "5d9a6349-e283-49ac-964b-2ce225455db3",
+			"id": "134cdddf-dfd6-469e-8c9c-072402721499",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a37eb241-2e92-4844-bc5c-ebe5c2fb4aa5",
+			"id": "e4a5aba2-f1f1-40f4-9789-52ec8b452dd7",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "f4857839-a4a7-45f1-87ca-c7e4df2eb9a9",
+			"id": "815be379-c6e9-42f7-b69f-4d831690d919",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "f0b238d8-55ea-4429-8a22-a9617e3387ac",
+			"id": "fdce65de-72e9-460e-9d56-9e6054a6a5d7",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "e3a090c8-1a25-4764-9fb2-e34c83137184",
+			"id": "24224f4d-1be4-436d-a12c-8cd4f0980c95",
 			"key": "transactionId2",
 			"value": ""
 		}
