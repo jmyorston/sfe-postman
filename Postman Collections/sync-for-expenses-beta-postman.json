@@ -483,13 +483,13 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "c06ff967-f900-4eb4-ba55-86725a60be6b",
 										"exec": [
 											"var resp = JSON.parse(responseBody)\r",
 											"\r",
 											"pm.collectionVariables.set(\"syncId\", resp.syncId)"
 										],
-										"type": "text/javascript",
-										"id": "c06ff967-f900-4eb4-ba55-86725a60be6b"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -520,9 +520,9 @@
 									],
 									"variable": [
 										{
-											"id": "64ef30c7-cbf8-49cd-9625-2c295265064f",
 											"key": "companyId",
-											"value": "{{companyId}}"
+											"value": "{{companyId}}",
+											"description": "Unique identifier of the Company."
 										}
 									]
 								},
@@ -552,14 +552,14 @@
 									],
 									"variable": [
 										{
-											"id": "8a402e21-6ab5-4652-a53d-31bae6864415",
 											"key": "companyId",
-											"value": "{{companyId}}"
+											"value": "{{companyId}}",
+											"description": "Unique identifier of the Company."
 										},
 										{
-											"id": "9ef1a5f8-049b-4655-bbac-ae9ca5d3d523",
 											"key": "syncId",
-											"value": "{{syncId}}"
+											"value": "{{syncId}}",
+											"description": "Unique identifier of the companies sync."
 										}
 									]
 								},
@@ -747,90 +747,90 @@
 	],
 	"variable": [
 		{
-			"id": "78658a7f-764c-458b-a935-c9662dde0b13",
+			"id": "6ed1e613-01f7-4bd8-8122-33a1fb912bab",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "46fab5e5-9756-4370-8666-1fb2e24ed431",
+			"id": "3a9a2c74-796f-4a55-a32a-5c03da1629d0",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "b0e7699f-5586-4c0c-86e6-f8422c35df4f",
+			"id": "df6b748a-05eb-423a-afa6-33ae4931dcb1",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "5ddf8ee7-acf8-42e7-be17-b7697b86423c",
+			"id": "ad318d24-e2d8-4721-b913-f6b1c8e86540",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "6d6d3654-42d4-4130-a873-255e1f3bdccc",
+			"id": "710772ac-505c-4545-a6cd-6241531d8d11",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "18d7c2a8-e08d-4282-a2bd-6d44aff3b179",
+			"id": "b5538352-efe5-40bc-818a-910d9aa7f5f5",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "4a761b18-d35f-47a1-b2d7-80f14d4f84a4",
+			"id": "8861e13f-36f6-4869-ae21-c4d4365966d8",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "b223122c-27e9-4047-b9c3-d867b653bd91",
+			"id": "0240df25-6f97-4927-8ba5-724a41dbbaf5",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "30a494c9-712a-4f63-9a73-f823073b389a",
+			"id": "b616c189-21e6-4eb1-9973-5d351dc16279",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "1fc24169-ad40-463c-a107-427c2e71fe6e",
+			"id": "301a2d91-51f9-424a-88f4-24d1d60337dc",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "ed0eaa67-9c68-4a30-a028-7d4f9abd34b0",
+			"id": "86f5d104-9ba4-45b9-b420-4ea418ff20f9",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "8684e1a2-6fe3-4918-b090-f5e229ff9934",
+			"id": "f7e256e0-4ef5-4cec-a8ed-4646a1445bdd",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "375a51c6-c8b3-43b2-bd7c-9654032a5244",
+			"id": "a4e5d556-f8ff-45c2-b4ce-02f2764554e7",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "646ef9ea-16fe-4df4-8e22-da78180b69e7",
+			"id": "565f1057-4d31-4e94-aa31-7e9bc342c19c",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "1622cd4b-f16c-4c83-8f34-5d619feaa623",
+			"id": "d901261d-4c76-491b-8d13-799b6e95c45a",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "eb7d342a-3060-4cd2-a6fb-f3a5ce8aeb20",
+			"id": "bec0803f-13b9-4e78-b86f-3283cc0b82ce",
 			"key": "transactionId2",
 			"value": ""
 		}
