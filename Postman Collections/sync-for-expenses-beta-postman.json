@@ -520,7 +520,7 @@
 										}
 									]
 								},
-								"description": "StartFragment\n\nOnce you have pushed data to Codat and created datasets you can then initiate the sync process. You can either sync dataset by dataset, or you can provide an array of datasets to sync. You will not be able to queue or initiate another sync when one is ongoing.\n\nThe sync process includes fetching the transactional datasets from the data cache, validating and mapping the data, and then pushing it to the accounting platform.\n\nEndFragment"
+								"description": "Once you have pushed data to Codat and created datasets you can then initiate the sync process. You can either sync dataset by dataset, or you can provide an array of datasets to sync. You will not be able to queue or initiate another sync when one is ongoing.\n\nThe sync process includes fetching the transactional datasets from the partnerExpense data cache, validating and mapping the data, and then pushing it to the accounting platform."
 							},
 							"response": []
 						},
@@ -737,90 +737,90 @@
 	],
 	"variable": [
 		{
-			"id": "d51d0c28-fb78-4a9f-9099-c48181a2d61e",
+			"id": "c2cbe79b-63b5-46d0-af01-70ef4ea9ba1f",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "95dd9ea3-507c-4227-b7ef-ac6a727ee744",
+			"id": "f0f61da0-1898-4501-b9d9-da2f5a7cd09e",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "c8a69328-fbbb-4629-a6e2-3bf43e05a249",
+			"id": "730a9f10-2d48-43d6-a277-7e6f68087630",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "7fd1b342-5a4b-41b9-9361-4dd0619a5cf0",
+			"id": "472c8a94-8222-407d-b28d-45ac06eb37f1",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "3c53ebb9-eb64-4a6f-9c77-c699914f718e",
+			"id": "b847787f-815e-4132-abd2-fbf6241a884b",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "b7343f85-da92-4e3d-9199-131fae5211b7",
+			"id": "e96cc4ef-9b98-468a-b8d1-56fb4aa61d58",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "31b198b7-15e9-43b6-aebd-c43fc7abb94e",
+			"id": "2b8496ca-8a75-4c92-822d-508fa7ad7ac2",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "13f4235a-bcfc-4677-9071-ea22d3357fcc",
+			"id": "ea1fac98-01e9-4acf-b6ad-fc03dfd76dab",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "482949f0-b5d5-4515-9473-8badd1c7f8c2",
+			"id": "641938eb-beda-4bbf-9d6b-7a045c204f84",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "a393be78-5057-450e-be4a-3fe2d643007d",
+			"id": "60be38fd-18cc-4bf3-93d0-89d07e18d6d9",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "313989ee-e065-4dc1-b6cd-2fed565d1848",
+			"id": "e19f2df6-26b1-4dc9-a8f0-7c1d510a4bf9",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "11c41e09-c20a-4277-b146-7c96c8c84915",
+			"id": "e4ce9a7d-4d4b-4f57-80f2-e4259f0a087f",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b06284e8-131c-4da3-95e9-20695e404996",
+			"id": "6121b621-c738-4cdf-8804-a906fcbe8ea0",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "3edc6eff-f5ea-4299-b922-9cced0e38b32",
+			"id": "ce1e34d2-8550-47ad-be45-528d4d53cc04",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "a7d45faf-35f6-4752-8603-10612fd8e1e2",
+			"id": "39a9e29c-7bf4-42b1-bfe4-27acf4b18a17",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "46425208-8aa7-4471-8cea-d0e07c2bcd99",
+			"id": "0a745e88-093e-458e-bf2a-53949404e413",
 			"key": "transactionId2",
 			"value": ""
 		}
