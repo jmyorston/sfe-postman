@@ -388,7 +388,8 @@
 											"value": "{{companyId}}"
 										}
 									]
-								}
+								},
+								"description": "StartFragment\n\nEvery company will have their own preference on how an individual expense can be represented in their accounting software, you can retrieve these options from the `mappingOptions` endpoint.\n\nStartFragment\n\nThe `mappingOptions` response can then be cached and the results displayed to your end users when they are finalizing their expenses before exporting."
 							},
 							"response": []
 						}
@@ -734,90 +735,90 @@
 	],
 	"variable": [
 		{
-			"id": "066ac3d7-2440-4266-8fde-f152a50ffdf7",
+			"id": "72e32124-cff0-4136-ab05-ce90ea9d5ff0",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "76d5f50d-d451-4f78-84f3-2680204c6245",
+			"id": "a3c79dfe-f603-41ac-be96-ea23b0bbb33a",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "83d1e237-46b9-4756-a895-2cddb33be855",
+			"id": "83682e66-29b6-4a72-8153-780b092fac2c",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "82412f14-d8bc-4632-b5b3-af92875a26f0",
+			"id": "3169fa54-b0c3-415c-b874-413c98bca9fb",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "876231da-884c-430b-bdf3-941f7e9791d9",
+			"id": "6a759821-6325-442f-896a-690019f87c3a",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "c96b31b7-5df9-4c1f-8629-e95c169468c1",
+			"id": "5b6737a6-ed06-4926-9748-e4bf7f93d8e0",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "0b302085-4d91-4cb2-94b0-5e8e94cb1a1a",
+			"id": "24a0f659-5cd4-4e08-a7f7-604122c785d0",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "6d767abf-6140-40e4-8e03-a1bf356005b7",
+			"id": "e21d4197-e32d-4cef-8ee4-908fd02ebce5",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d6cf9e81-3530-43e4-b01c-90aa91b4dc3c",
+			"id": "8e503d17-77e7-4d45-89bf-808f9dea523a",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "6e731094-bdb7-4522-b1c9-121859b6bac6",
+			"id": "ecb8365b-6a0a-4cbe-8722-49992c068469",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "31bb7156-73ab-4f9b-a6a3-b81b703d4246",
+			"id": "99bcf8ce-8792-4a1a-9bf5-54a030b913db",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "a336b8b6-34e7-428b-a9b8-670950668736",
+			"id": "f80eb7cf-9d05-4859-bc6f-722d91eeaa4f",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "34ecab93-fb5e-4d18-8db5-5ff52b6d7c62",
+			"id": "355badb3-1846-4f22-9101-96355ba2a4a5",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "41923398-b0c0-4618-a3e4-f69975ab7807",
+			"id": "1eab90bb-150c-4e30-90df-3dad1b034867",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "de2e4603-a297-4aa3-a54c-fb4bb77accda",
+			"id": "0e35e1f2-2bae-4f88-9864-80c2a9091408",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "e2d5d1e0-34b3-4677-9fe9-5ec1cc8d89ed",
+			"id": "06720788-f4be-44e1-9172-b5e51e4cf75f",
 			"key": "transactionId2",
 			"value": ""
 		}
