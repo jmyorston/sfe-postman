@@ -626,7 +626,7 @@
 										}
 									]
 								},
-								"description": "StartFragment\n\nIn addition to sync status endpoints, Codat provides a transactions endpoint where you can see the status of individual transactions in a given sync.\n\nThis enables you to see if the transaction has been pushed successfully to the accounting software, or details or the errors associated to the transaction if it was unsuccessful.\n\nEndFragment"
+								"description": "In addition to sync status endpoints, Codat provides a transactions endpoint where you can see the status of individual transactions in a given sync.\n\nThis enables you to see if the transaction has been pushed successfully to the accounting software, or details or the errors associated to the transaction if it was unsuccessful."
 							},
 							"response": []
 						}
@@ -740,90 +740,90 @@
 	],
 	"variable": [
 		{
-			"id": "5a4eb766-3d76-43df-9c5b-424d0cd37676",
+			"id": "52121298-d64c-402a-b283-02496c0975a1",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "7826338b-540a-4730-ace3-12368a367063",
+			"id": "0e83ddbd-72e9-4c43-9e69-fb583759edfb",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "571b6ec4-8314-46da-801b-730c3b83d69a",
+			"id": "fa0e409c-7b24-4fd2-b100-99c14ae20e22",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "6895c7eb-3283-4713-8c86-ed69da2cccc7",
+			"id": "9c826aa2-9f92-46f0-8f5b-4427ddebd957",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "ce9ac48d-393a-4a1d-9627-922185284235",
+			"id": "bc8ce26e-750e-418b-92b5-13cc638ecdf4",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "79ce3577-34f7-480b-807a-6ba3c50a1ee9",
+			"id": "2651a783-f6fc-4e5c-a7c3-aac4496fb1c2",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "4a897704-0360-4b36-b2d4-4d73bd77a0f3",
+			"id": "8064cd96-3fa9-47a0-ab93-d4305833cfdb",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "effbca8e-9304-4822-92e6-d212b1d357b6",
+			"id": "03bab0a5-cde8-49d1-bd83-3bad15491e84",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c0ec25a-3f14-4c5c-9c81-492846deb4e3",
+			"id": "49c0a6f6-55b5-413a-a13f-840ad1651388",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "7932846c-a3e7-491a-83c3-9c66743e33c7",
+			"id": "9791bad0-fb02-4509-9ee7-80fee8cd0e97",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "6a12ca8c-5824-4e49-83e7-7fd6a902d176",
+			"id": "65c66950-4f41-41b6-a3fd-c2bbcfa3937a",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "4863d93a-4148-4089-baed-fab10b4cb1c1",
+			"id": "5d9a6349-e283-49ac-964b-2ce225455db3",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a3cf62a0-c03e-4a3b-b90c-a1066b8c22bf",
+			"id": "a37eb241-2e92-4844-bc5c-ebe5c2fb4aa5",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "2bbf1866-d15c-40f9-8ae7-41bc59b383c9",
+			"id": "f4857839-a4a7-45f1-87ca-c7e4df2eb9a9",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "066a1dc2-38ce-4f44-927d-9122a1289a5f",
+			"id": "f0b238d8-55ea-4429-8a22-a9617e3387ac",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "53d6e802-b9e6-4c0a-a63c-4d06660605be",
+			"id": "e3a090c8-1a25-4764-9fb2-e34c83137184",
 			"key": "transactionId2",
 			"value": ""
 		}
