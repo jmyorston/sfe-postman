@@ -164,6 +164,21 @@
 						},
 						{
 							"name": "Get Bank Account",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e3e6b433-d15e-49ce-8603-55bfd6960426",
+										"exec": [
+											"var resp = JSON.parse(responseBody)\r",
+											"\r",
+											"// stores the accounting connection as a collection variable\r",
+											"pm.collectionVariables.set(\"selectedBankAccountId\", resp.results[0].id)"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "20759710-dc9a-4319-8263-422a6e5a0b12",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -796,95 +811,95 @@
 	],
 	"variable": [
 		{
-			"id": "c366f757-cefc-4a94-bf7e-a64706a3a48b",
+			"id": "f9746c95-dadf-4189-bd4e-670c612d5094",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "7a2527b2-3e4c-462f-854f-adc79ca48f83",
+			"id": "58d0d649-751d-4f61-aa2b-e60261e29467",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "7490a0f3-e811-42fd-a443-a85ba78c62a3",
+			"id": "ca5852d2-b10b-428a-8ee6-d82ef911c631",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "6e98ae7f-6564-4069-8866-16fb70d9de75",
+			"id": "bef42884-1a24-4483-8896-bf2ef39e2fea",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "61cfa742-1bd3-4f51-a491-f6df3605b7d8",
+			"id": "9c083368-7888-492e-87da-3b761d5ffe6a",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "8c9654dc-6ffa-4809-89d2-e6600da0f76c",
+			"id": "a2942cb5-26c3-4cd2-927d-f944e40d02a5",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "4eb9adb6-94da-4c20-b2eb-876683a85df7",
+			"id": "cbca3fde-ed55-4e1b-a461-25bf3c4170bb",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "577ffeb4-7474-4249-b995-4f4048277913",
+			"id": "0f772e39-6e05-44c4-9f3c-263f4526cdab",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "adb3ee5c-8ac6-4044-b7ba-c90413f76b9e",
+			"id": "5f50c74b-28e7-4ce5-9ba3-aad85596f28c",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "e2d09a65-c734-4d2d-acb2-d0940053565a",
+			"id": "5a19c425-aaa4-4563-b068-6da20dd0159c",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "f6b2c1f4-1982-4c51-8495-7752ff8ff1f5",
+			"id": "ddd061af-2ed6-421c-98e6-2417bec4a811",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "929918bb-0ef1-4ddf-a7f2-c6e3dde5fcb0",
+			"id": "0a14e68b-46fe-4db8-a8d4-ac6e0b418a6c",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "539b4812-9065-4180-a084-c04863777d44",
+			"id": "18be8a41-e3a5-4636-bb84-36cceb95f26c",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "4bc15fc2-3911-414b-9ea6-f05dd2d3c821",
+			"id": "2543a0c5-d461-44da-91b4-b751490852fd",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "8d936bed-ae6e-4841-96eb-bd4e68023ad8",
+			"id": "ed46958a-a5c7-4e42-aa97-d2e5aa46a685",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "fb25bdd1-e9d2-4020-a06c-751fbe810d8c",
+			"id": "c0cdd79e-2a8b-4284-a6d1-bcb4a195087a",
 			"key": "transactionId2",
 			"value": ""
 		},
 		{
-			"id": "09441a0a-c276-4a88-a48c-30589b7c70b2",
+			"id": "4d863ec9-3343-4530-9787-3f829b517f83",
 			"key": "selectedBankAccountId",
 			"value": ""
 		}
