@@ -855,105 +855,105 @@
 	],
 	"variable": [
 		{
-			"id": "f770ce5d-64bd-42fc-ab86-165d252d7632",
+			"id": "e8125886-2205-40df-95e9-028292c63197",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "71c71917-7ee4-474b-ad79-f6e2bde29d51",
+			"id": "b7dc1746-1582-4dd5-8dfe-e2708d5c34b9",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "dcc96540-1076-43ad-b95c-f5290b7ae675",
+			"id": "18bfce3b-7ed0-4a45-8d7a-6d3c059b7ff7",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "f1cf09c6-41f2-45bd-9d41-1ab44cd106d1",
+			"id": "8871c889-f994-4842-be8c-4bf367365568",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "f086554f-07eb-43e8-8cfd-324dccd2c57a",
+			"id": "9507ce4c-cda2-4717-9aef-d5a11684e10f",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "3e545e3d-5305-44c0-bd29-81223d3f2f12",
+			"id": "60b6d43c-0e75-42e9-8413-3f5f8b6c2a13",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "8b6aaa47-bb30-43af-af07-b73502ce13aa",
+			"id": "aa81343c-3e36-493d-9858-4412ec0eceee",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "645daf0e-31a6-4c5f-bf55-7b98cc982ddb",
+			"id": "034fda78-7f92-49be-8d22-cadd029e55c0",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "db2badfe-3896-4096-ab7c-316d38f6537d",
+			"id": "f69eb11e-3482-493f-b367-e9f3cc78aa77",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "c7cfdac1-4345-43cf-ab45-90ab379024f7",
+			"id": "2f38d629-752c-4218-ae78-662cb1bfc9dc",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "d2b93bbb-562d-4282-961e-56ff1fcbd27e",
+			"id": "bc7d62fa-81a3-4696-9a7a-14cad8aeadd4",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "f25373c5-8e6a-4dc7-9c28-3a8d54c13b44",
+			"id": "1676fd52-2421-4741-8214-bbca79651be3",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6bf609fb-6e33-4b1c-bbb0-542b3baf9bd5",
+			"id": "4ab06b63-c612-4c40-831b-9e7afb594eee",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "7e7e728e-7c4a-4506-a2fa-2b35fd6488be",
+			"id": "d5ac5564-6c6a-49dd-8a09-211629829079",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "99f4e779-8374-49b3-b772-3698c6448593",
+			"id": "57b541b4-96a8-40ed-a50c-2eb57d97db0f",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "4cd25dd1-f9f3-4324-ad3a-2076e18f1346",
+			"id": "464c0d73-2c75-46f0-bd88-d94b314c0039",
 			"key": "transactionId2",
 			"value": ""
 		},
 		{
-			"id": "30a1f537-3818-494a-9653-240b81b3574e",
+			"id": "4f630bc6-3bed-4afc-a259-9df84900b7e2",
 			"key": "selectedBankAccountId",
 			"value": ""
 		},
 		{
-			"id": "76ef8af8-4e87-433f-9f8a-cbdf05f9337a",
+			"id": "11837809-f5fa-4297-b0f8-f805e989a5f3",
 			"key": "selectedCustomerId",
 			"value": ""
 		},
 		{
-			"id": "5013e71d-512a-44c1-a10f-0172657d16aa",
+			"id": "6c0b9d6f-c6b3-4d40-984f-9869a88c9697",
 			"key": "selectedSupplierId",
 			"value": ""
 		}
