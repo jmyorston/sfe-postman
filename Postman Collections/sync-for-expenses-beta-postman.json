@@ -370,6 +370,46 @@
 							"response": []
 						},
 						{
+							"name": "Save Configuration Copy",
+							"id": "085ac50d-90bc-4f48-86ff-a78d2ec86790",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bankAccount\": {\r\n        \"id\": \"171\"\r\n    },\r\n    \"supplier\": {\r\n        \"id\": \"124\"\r\n    },\r\n    \"customer\": {\r\n        \"id\": \"140\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{expenseUrl}}companies/:companyId/config",
+									"host": [
+										"{{expenseUrl}}companies"
+									],
+									"path": [
+										":companyId",
+										"config"
+									],
+									"variable": [
+										{
+											"id": "b575ff86-f5f7-4c1b-aeb2-86b510c89281",
+											"key": "companyId",
+											"value": "{{companyId}}",
+											"description": "Unique identifier of the Company."
+										}
+									]
+								},
+								"description": "Saving the configuration persists the way your company wants to see their expenses in their accounting software"
+							},
+							"response": []
+						},
+						{
 							"name": "Get expense mapping options",
 							"id": "3c428e17-ab34-4bdf-a0c1-ee4f6f064166",
 							"protocolProfileBehavior": {
@@ -750,90 +790,90 @@
 	],
 	"variable": [
 		{
-			"id": "f35158df-1f43-460d-96ec-88dc584afd96",
+			"id": "ab292c1d-d52b-42ed-80bc-2bfbf7521f8e",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "c40c8d3f-e0e9-43a0-9744-03154d5cd80e",
+			"id": "ee62d609-4ed8-4af3-abed-df9db8a5404d",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "58639e6a-86f2-4f96-83c6-bb79a6921227",
+			"id": "93148f83-b54a-4bb9-a9f2-826de1c49f66",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "75557640-d7d1-4ccf-952b-97f38575e751",
+			"id": "93ca6e93-d107-49e4-a0f9-428fc8b9f9da",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "2a539d1d-5c78-496c-bd45-60e7e9f695ce",
+			"id": "9a244147-0af4-4fb5-af3a-9abd7b194269",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "1a58f1ce-57fc-4c91-817e-dbb083ec68c3",
+			"id": "09c9b299-060c-47e5-b90a-5cd3aeee640e",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "b47bde5d-787c-4ba9-9e7b-da5c512299a0",
+			"id": "50fedc77-2b14-4d29-a011-0ef6ca4b139a",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "87e84dcb-043c-42dc-8a71-daead5072f8d",
+			"id": "c5c04008-81ff-4167-867e-ca4dcdcbfad0",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "928f98d8-475c-4e3c-a7ae-89e8690b382f",
+			"id": "7ebe535b-73bb-474f-a408-c353ba077873",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "f315e5e3-2ea0-4fc2-989a-f3e428ca01e5",
+			"id": "dbab28b2-22b7-47ff-807f-1b7a19bad3b5",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "836ebe17-99b2-4b07-9386-96dc7142f14a",
+			"id": "22b434fa-7ff7-4b1a-95bc-6d5ca77cc1fa",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "0cd9929c-6dc2-4e4f-acae-0014e1fa7e10",
+			"id": "7e7ffaae-3153-4211-997b-3b3c7ea2f2b0",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "48a1fa58-1fa4-49d6-9785-ae00d47f31b7",
+			"id": "68465dba-07c3-4b44-9928-a9862a529b17",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "d984fea0-8eb2-4f93-ba43-f623cbb6436e",
+			"id": "e7a6f119-45d8-47bf-abba-9d9b7cc723e1",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "c97f5f71-d679-4bd3-ac61-8e24ee5c1c5a",
+			"id": "93246ad2-48f5-46ea-9e4a-03e8102e4548",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "be86c7c6-dd91-42fa-9dad-e5638dc4264d",
+			"id": "cb13cd09-b52b-434b-91d0-5b1bda8bdd81",
 			"key": "transactionId2",
 			"value": ""
 		}
