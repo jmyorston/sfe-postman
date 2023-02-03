@@ -163,6 +163,18 @@
 							"response": []
 						},
 						{
+							"name": "Get Bank Account",
+							"id": "20759710-dc9a-4319-8263-422a6e5a0b12",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
 							"name": "GET Customers",
 							"id": "c724c120-a380-4c5e-a43b-afac860b8710",
 							"protocolProfileBehavior": {
@@ -436,18 +448,6 @@
 									]
 								},
 								"description": "StartFragment\n\nEvery company will have their own preference on how an individual expense can be represented in their accounting software, you can retrieve these options from the `mappingOptions` endpoint.\n\nStartFragment\n\nThe `mappingOptions` response can then be cached and the results displayed to your end users when they are finalizing their expenses before exporting."
-							},
-							"response": []
-						},
-						{
-							"name": "New Request",
-							"id": "20759710-dc9a-4319-8263-422a6e5a0b12",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
 							},
 							"response": []
 						}
@@ -802,90 +802,90 @@
 	],
 	"variable": [
 		{
-			"id": "7fe46508-edc0-4be2-a6cb-40910c384b84",
+			"id": "99665690-d3a4-4c30-adaf-b3577f21903e",
 			"key": "companyId",
 			"value": "00000000-0000-0000-0000-000000000000"
 		},
 		{
-			"id": "58dcffc0-0af0-4a45-a8de-049ed4a3f4a2",
+			"id": "9de4f3e1-1d23-4945-9490-d21f0904b4e8",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "8bab15be-bd13-490a-842d-955eff82d27c",
+			"id": "cb683365-07c4-4825-9bb9-227444345803",
 			"key": "accountingConnectionId",
 			"value": ""
 		},
 		{
-			"id": "4e5d5b74-ef28-4749-833b-40d9f8cc44d4",
+			"id": "f8eeb7ea-f3f6-4ae8-bdc8-4f2d8fa059c4",
 			"key": "commerceKey",
 			"value": "lqai",
 			"type": "string"
 		},
 		{
-			"id": "aaa4ab1e-8dc6-4c88-9055-7ffba107ad45",
+			"id": "3d4a4629-43e1-4aed-b232-0ce4c4f23c72",
 			"key": "accountingKey",
 			"value": "gbol",
 			"type": "string"
 		},
 		{
-			"id": "0465c694-3214-43ef-b3ba-365911567913",
+			"id": "172f7476-39a1-4155-953d-6122664f35d9",
 			"key": "merchantName",
 			"value": "SME Name or ID",
 			"type": "string"
 		},
 		{
-			"id": "301f65ee-db7b-49cc-b36e-2770c5e217be",
+			"id": "0474dc4b-c3a7-4b06-95d0-fdcadb2da3cd",
 			"key": "platformKey",
 			"value": "mqjo",
 			"type": "string"
 		},
 		{
-			"id": "12067c44-d396-4af6-b6cf-8e1eba5d8891",
+			"id": "122fd9c8-90c6-4860-aa5c-91474245255d",
 			"key": "connectionId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "617aec83-38ac-4aab-8a7b-eb334440a939",
+			"id": "b23b1882-600a-45e4-8041-401052deb0c5",
 			"key": "expenseUrl",
 			"value": "https://expensesync-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "fab81712-a4c2-42c0-a015-0c5f2ff883a1",
+			"id": "50326bbb-14ff-4c26-86f7-0df144ab233d",
 			"key": "baseUrl",
 			"value": "https://api-integration.codat.io/",
 			"type": "string"
 		},
 		{
-			"id": "7f3fab6a-cc6b-4a6e-8eb4-7f4a705630a0",
+			"id": "865cfc5e-656e-4301-bb6a-ca07d29214bc",
 			"key": "expenseConnectionId",
 			"value": ""
 		},
 		{
-			"id": "e2810a52-48e8-4425-952f-7b37dce36074",
+			"id": "12d35b4f-9870-4c67-8993-a4f42005c927",
 			"key": "datasetId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e6cb6fd2-a84b-46f8-a201-988c874d6c2d",
+			"id": "e2c9e6af-7cfa-41d7-babd-bc8d41ed7a13",
 			"key": "syncId",
 			"value": ""
 		},
 		{
-			"id": "139b4bee-b46a-44a5-9b96-ae1890b3d3f9",
+			"id": "4fe3589a-10ff-4843-b32c-8ca3f54380a1",
 			"key": "transactionId",
 			"value": ""
 		},
 		{
-			"id": "e7f255c0-4499-4b7a-9fab-9477108d939c",
+			"id": "f3a67263-46da-4aac-b0e7-2b3d2f58e773",
 			"key": "transactionId1",
 			"value": ""
 		},
 		{
-			"id": "ad9e2c4b-9c1a-4d62-a207-05ef227662f2",
+			"id": "9a612fe4-a741-4b71-9cfc-7606c88802c2",
 			"key": "transactionId2",
 			"value": ""
 		}
